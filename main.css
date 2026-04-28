@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     
+  object-position: center;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  padding: 32px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.galeria img {
+  width: 100%;
+  height: auto;
+}
+
+.tarjeta {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+
+.tarjeta img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.tarjeta_descripcion {
+  padding: 16px;
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+  color: #444;
+  background: #fff;
+}
+
+@media screen and (min-width:768px){/*768 px*/
+
+.galeria {
+  grid-template-columns: 1fr 1fr;
+}
+}
+
+
+
+@media screen and (min-width:992px){/*768 px*/
+
+}
+
+
+
+@media screen and (min-width:1200px){/*768 px*/
+
+  .galeria {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
