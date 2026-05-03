@@ -1,13 +1,13 @@
-const imagesHeader = ["viajes-1.jpg", "viajes-2.jpg","viajes-3.jpg", "viajes-4.jpg", "viajes-5.jpg", "viajes-6.jpg", "viajes-7.jpg" ];
+const imagesHeader = ["assets/images/viajes-1.jpg", "assets/images/viajes-2.jpg","assets/images/viajes-3.jpg", "assets/images/viajes-4.jpg", "assets/images/viajes-5.jpg", "assets/images/viajes-6.jpg", "assets/images/viajes-7.jpg" ];
 
 const imagesGaleria = [
-  { src: "viajes-1.jpg", descripcion: "Playa de Cancún" },
-  { src: "viajes-2.jpg", descripcion: "Pasarela de Hawaii" },
-  { src: "viajes-3.jpg", descripcion: "Cartelera direcciones" },
-  { src: "viajes-4.jpg", descripcion: "Puente de Sevilla" },
-  { src: "viajes-5.jpg", descripcion: "Puente de Siena" },
-  { src: "viajes-6.jpg", descripcion: "Paseo Cantabria" },
-  { src: "viajes-7.jpg", descripcion: "Castillo Dénia" }
+  { src: "assets/images/viajes-1.jpg", descripcion: "Playa de Cancún" },
+  { src: "assets/images/viajes-2.jpg", descripcion: "Pasarela de Hawaii" },
+  { src: "assets/images/viajes-3.jpg", descripcion: "Cartelera direcciones" },
+  { src: "assets/images/viajes-4.jpg", descripcion: "Puente de Sevilla" },
+  { src: "assets/images/viajes-5.jpg", descripcion: "Puente de Siena" },
+  { src: "assets/images/viajes-6.jpg", descripcion: "Paseo Cantabria" },
+  { src: "assets/images/viajes-7.jpg", descripcion: "Castillo Dénia" }
 ];
 
 const imgAleatorio = Math.floor(Math.random() * imagesHeader.length); //random te devuelve un numero entre 0 y 1 (decimal) que luego se le multiplica a la length del array imagesHeader. Y como no da entero hace falta el floor. 
@@ -34,6 +34,9 @@ imagesGaleria.forEach(function(imagen) { //recorre cada elemento del array image
   galeria.appendChild(tarjeta);//ahora la tarjeta está en la galería y además se repite para todas las imágenes del array porque está dentro del forEach()
 
 });
+
+//pintar todas las cajas de una, no una a una, que no es eficiente. 
+//for --------> forEach() para pasar por los elementos del array.
 
 
 
